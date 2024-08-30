@@ -2,8 +2,8 @@
 
 if [ $1 ]
 then
-    sudo docker build --build-arg FILENAME=$1 -t nubank_capital_gain .
+    sudo docker build --build-arg FILENAME=$1 -t capital_gain_calculator .
 else
-    sudo docker build -t nubank_capital_gain .
+    sudo docker build -t capital_gain_calculator .
 fi
-sudo docker run -it nubank_capital_gain /bin/bash
+sudo docker run -it capital_gain_calculator /bin/bash
